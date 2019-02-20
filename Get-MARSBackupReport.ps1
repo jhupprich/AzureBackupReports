@@ -17,8 +17,8 @@
 
 #variables - change per site
 $client = 'ABIN'
-$admin = "admin@nsedc.microsoftonline.com" 
-$securePass = "$@!M0nTaGG1ng*" | ConvertTo-SecureString -AsPlainText -Force
+$admin = "jhupprich@dougrwgci.onmicrosoft.com" 
+$securePass = "Prince0f$pace!" | ConvertTo-SecureString -AsPlainText -Force
 $subID = "d6a3f26f-407a-49ce-b0ec-97f6b7109d6f"
 $vault = "NSEDC-File"
 
