@@ -17,12 +17,14 @@
 
 #variables - change per site
 $client = 'ABIN'
-
+$admin = "admin@nsedc.microsoftonline.com" 
+$securePass = "$@!M0nTaGG1ng*" | ConvertTo-SecureString -AsPlainText -Force
+$subID
 
 #static variables
 $arr01 = @()
 $arr02 = @()
 $date = Get-Date -Format MM-dd-yyyy
 $path = "C:\scripts\" + $client + "_BackupReport_" + $date + ".xlsx"
-$subjectpass = "[SUCCESS] - " + $client + " Recovery Point Report for " + $date
-$subjectfail = "[FAILURE] - " + $client + " Recovery Point Report for " + $date
+$subjectPass = "[SUCCESS] - " + $client + " Recovery Point Report for " + $date
+$subjectFail = "[FAILURE] - " + $client + " Recovery Point Report for " + $date
