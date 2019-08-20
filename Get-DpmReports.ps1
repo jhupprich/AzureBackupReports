@@ -58,11 +58,11 @@ $arr01 | Sort-Object -Property Computer | Export-Excel -Path $path -AutoSize `
 -ConditionalText $txt01,$txt02
 
 if($arr02.Count -gt 1){
-    Send-MailMessage -To MITS.backups@acsalaska.com -From SMTP@nsedc.com -Subject $subjectfail `
-    -SmtpServer NSEDC-UTIL03.nsedc1.com -Attachments $path
+    Send-MailMessage -To backup@youremail.com -From relayname@client.com -Subject $subjectfail `
+    -SmtpServer relayserverFQDNorIP -Attachments $path
 }
 
 else{
-    Send-MailMessage -To MITS.backups@acsalaska.com -From SMTP@nsedc.com -Subject $subjectpass `
--SmtpServer NSEDC-UTIL03.nsedc1.com -Attachments $path
+    Send-MailMessage -To backup@youremail.com -From relayname@client.comm -Subject $subjectpass `
+-SmtpServer relayserverFQDNorIP -Attachments $path
 }
